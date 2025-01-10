@@ -65,7 +65,7 @@ TintTrove is deployed on **Heroku**, making it accessible anywhere.
 5. Open the application in your browser at `http://localhost:5000`.
 
 ## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, Tailwind CSS, GSAP
 - **Backend**: Python, Flask
 - **Algorithm**: KMeans clustering for color extraction
 - **Image Processing**: OpenCV
