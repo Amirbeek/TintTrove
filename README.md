@@ -71,14 +71,6 @@ TintTrove is deployed on **Heroku**, making it accessible anywhere.
 - **Image Processing**: OpenCV
 - **Deployment**: Heroku
 
-## Potential Additions
-To increase user engagement, consider adding:
-- **Save Palettes**: Allow users to save extracted palettes.
-- **Palette Suggestions**: Suggest complementary or analogous palettes based on extracted colors.
-- **Download Options**: Export palettes as JSON, CSS, or images.
-- **User Accounts**: Enable users to store their palettes online.
-- **Integration with Design Tools**: Provide links to Adobe or Canva for direct palette import.
-
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request.
 
