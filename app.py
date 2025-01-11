@@ -21,14 +21,12 @@ def color():
         image_file = request.files['images[]']
 
         try:
-            # Read image using imageio
             image = imageio.imread(image_file)
         except Exception as e:
             app.logger.error(f"Image processing failed: {str(e)}")
             return jsonify({"error": f"Failed to process the image. Error: {str(e)}"}), 400
 
         try:
-            # Get dominant colors
             dominant_colors = get_colors(image, number_of_colors=5, show_chart=False)
             app.logger.info(f"Dominant colors: {dominant_colors}")
             return jsonify({"dominant_colors": dominant_colors})
