@@ -39,7 +39,7 @@ def get_colors(image, number_of_colors, show_chart=False):
 TintTrove is deployed on **Heroku**, making it accessible anywhere.
 
 ### Live Demo
-[Check out TintTrove live on Heroku](#)
+[Check out TintTrove live on Heroku](https://tinttrove-66532836a19d.herokuapp.com/)
 
 ## Installation
 1. Clone the repository:
