@@ -1,6 +1,3 @@
-import imageio.v2 as imageio
-import matplotlib.pyplot as plt
-import numpy as np
 from sklearn.cluster import KMeans
 import cv2
 from collections import Counter

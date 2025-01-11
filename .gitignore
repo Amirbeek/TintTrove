@@ -1,5 +1,8 @@
 node_modules/
-# Python
-__pycache__/
-*.py[cod]
-.vercel
+*.pyc
+__pycache__
+tests/
+.git
+*.env
+*.log
+*.md

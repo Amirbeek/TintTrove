@@ -1,10 +1,8 @@
 import imageio.v2 as imageio
 from flask import Flask, request, jsonify, render_template
-from color_clustering import get_colors, RGB_HEX
-import logging
-logging.basicConfig(level=logging.DEBUG)
+from color_clustering import get_colors
 
-app = Flask(__name__, static_folder='static')  # Updated static folder path
+app = Flask(__name__, static_folder='static')
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
