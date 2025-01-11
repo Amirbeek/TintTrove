@@ -1,11 +1,10 @@
-import os
-
 import imageio.v2 as imageio
 from flask import Flask, request, jsonify, render_template
 from color_clustering import get_colors, RGB_HEX
 app = Flask(__name__, static_folder='templates/static')
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 @app.route('/')
 def index():
