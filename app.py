@@ -1,6 +1,8 @@
 import imageio.v2 as imageio
 from flask import Flask, request, jsonify, render_template
 from color_clustering import get_colors, RGB_HEX
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__, static_folder='static')  # Updated static folder path
 UPLOAD_FOLDER = 'uploads'
@@ -24,13 +26,17 @@ def color():
             # Read image using imageio
             image = imageio.imread(image_file)
         except Exception as e:
+            app.logger.error(f"Image processing failed: {str(e)}")
             return jsonify({"error": f"Failed to process the image. Error: {str(e)}"}), 400
 
-        # Get dominant colors
-        dominant_colors = get_colors(image, number_of_colors=5, show_chart=False)
-        print(dominant_colors)
-
-        return jsonify({"dominant_colors": dominant_colors})
+        try:
+            # Get dominant colors
+            dominant_colors = get_colors(image, number_of_colors=5, show_chart=False)
+            app.logger.info(f"Dominant colors: {dominant_colors}")
+            return jsonify({"dominant_colors": dominant_colors})
+        except Exception as e:
+            app.logger.error(f"Color extraction failed: {str(e)}")
+            return jsonify({"error": f"Failed to extract colors. Error: {str(e)}"}), 500
 
     return render_template('color.html')
 
