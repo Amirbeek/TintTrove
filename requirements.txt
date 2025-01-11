@@ -1,5 +1,5 @@
 Flask==2.3.3
-imageio>=2.33,!=2.35.0  # Updated to avoid conflicts with scikit-image
+imageio>=2.33,!=2.35.0
 matplotlib==3.9.3
 numpy==1.26.0
 scikit-learn==1.3.1
