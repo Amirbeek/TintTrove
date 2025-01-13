@@ -73,11 +73,3 @@ TintTrove is deployed on **Heroku**, making it accessible anywhere.
 
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contact
-For any questions or feedback, reach out to:
-- Email: support@tinttrove.com
-- GitHub Issues: [Create an Issue](https://github.com/your-username/tinttrove/issues)
