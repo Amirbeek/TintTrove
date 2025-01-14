@@ -1,6 +1,7 @@
 # TintTrove
 
 TintTrove is a simple and elegant image color picker tool that extracts dominant colors from uploaded images. Designed to help designers, artists, and developers explore color palettes with ease. The project is powered by a KMeans clustering algorithm and deployed on Heroku.
+[Watch the video](https://www.amirbekshomurodov.me/images/tint.Mov)
 
 ## Features
 - Extracts dominant colors from any uploaded image.
